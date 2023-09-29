@@ -1,0 +1,29 @@
+{
+	"root": true,
+	"env": {
+		"es6": true,
+		"node": true,
+		"react-native/react-native": true
+	},
+	"extends": [
+		"airbnb",
+		"plugin:prettier/recommended",
+		"prettier/react",
+		"prettier/react-native"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["react-native", "prettier"],
+	"rules": {
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+	}
+}
